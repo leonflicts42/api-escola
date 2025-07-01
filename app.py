@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI # type: ignore
 from database import engine, Base
 from routers.alunos import alunos_router
 from routers.cursos import cursos_router
