@@ -68,6 +68,12 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    docker run -p 8000:8000 -d api-escola
    ```
 
+10. **Crie um arquivo docker-compose.yml**
+   Ele ira sintetizar os comandos `docker build + docker run` em um só comando
+   ```sh
+   docker-compose up --build
+   ```
+
 ---
 
 ## Estrutura do Projeto
