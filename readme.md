@@ -50,21 +50,21 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    Aqui você pode testar todos os endpoints da API de forma interativa.
 
 7. **Crie um arquivo .dockerignore**
-
-   '''
+   
+   '''sh
    venv
    __pycache__
    '''
 
 8. **Crie a imagem Docker do projeto**
 
-   '''
+   '''sh
    docker build -t api-escola .
    '''
 
 9. **Inicie o container com a imagem Docker do projeto**
 
-   '''
+   '''sh
    docker run -p 8000:8000 -d api-escola
    '''
 
