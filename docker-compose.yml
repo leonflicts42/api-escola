@@ -1,0 +1,22 @@
+services:
+  # Define o serviço para sua aplicação FastAPI.
+  api:
+    # Especifica que a imagem para este serviço deve ser construída usando o Dockerfile
+    # no diretório atual (c:\dev\projetos\ellis).
+    build: .
+    
+    # Atribui um nome personalizado ao contêiner para facilitar a identificação.
+    container_name: api-escola
+    
+    # Mapeia a porta 8000 do host para a porta 8000 no contêiner.
+    # Isso permite que você acesse a API do seu navegador em http://localhost:8000.
+    ports:
+      - "8000:8000"
+      
+    # Monta o diretório atual do host em /app no contêiner.
+    # Isso é crucial para o desenvolvimento, pois permite o hot-reloading do uvicorn
+    # e garante que o banco de dados SQLite (escola.db) seja salvo na sua máquina local,
+    # persistindo os dados entre as execuções do contêiner.
+    volumes:
+      - .:/app
+
