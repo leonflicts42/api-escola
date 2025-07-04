@@ -76,6 +76,14 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    docker-compose up --build
    ```
 
+11. **Autenticando no Google Cloud**
+   
+   ```sh
+   gcloud auth login
+   gcloud config set project PROJECT_ID
+   gcloud run deploy --port=8000
+   ```
+
 ---
 
 ## Estrutura do Projeto
